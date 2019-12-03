@@ -1,0 +1,3 @@
+rootProject.name = 'rxjava2'
+include 'chapter2'
+
