@@ -1,27 +1,6 @@
 buildscript {
-    ext {
-        springBootVersion = '2.2.1.RELEASE'
-
-        repos = {
-            maven { url 'http://repo.navercorp.jp/content/repositories/releases/' }
-            maven { url "http://repo.navercorp.jp/content/repositories/snapshots/" }
-            maven { url 'http://repo.linecorp.com/content/repositories/plugins.gradle.org/' }
-            mavenLocal()
-            maven { url 'http://repo.maven.apache.org/maven2' }
-            maven { url 'http://repo.spring.io/plugins-release' }
-        }
-    }
-
-    repositories repos
-
     repositories {
-        maven { url 'http://repo.linecorp.com/content/repositories/plugins.gradle.org/' }
-        maven { url 'http://repo.linecorp.com/content/repositories/releases/' }
         mavenCentral()
-    }
-    dependencies {
-        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
-        classpath "io.spring.gradle:dependency-management-plugin:1.0.6.RELEASE"
     }
 }
 
